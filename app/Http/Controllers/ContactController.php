@@ -27,7 +27,7 @@ class ContactController extends Controller
 
         Mail::to('buttgreat543@gmail.com')->send(new \App\Mail\ContactMail($data));
 
-        return response()->json(['message' => 'Email sent successfully'], 200);
+        return response()->json(['message' => 'Email sent successfully to your owner'], 200);
     }
 }
 
